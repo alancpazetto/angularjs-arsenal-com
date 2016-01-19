@@ -1,0 +1,13 @@
+//BOWER IMPORTS
+@import 'bower_components/material-design-lite/src/material-design-lite';
+
+@import 'mixins';
+
+body{
+	background: #FFF;
+	// @include size(10px, 10px);
+}
+
+.mdl-layout__header-row{
+	padding-left: 10px;
+}

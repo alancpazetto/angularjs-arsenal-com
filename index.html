@@ -1,0 +1,39 @@
+<html>
+<head>
+
+    <title>AngularJS Arsenal - The battlefield</title>
+    
+    <base href="/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="assets/layout.css">
+
+</head>
+
+<body>
+
+    <angular-arsenal>Loading...</angular-arsenal>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+    <script type="text/javascript" src="bower_components/material-design-lite/material.min.js"></script>
+
+    <script>
+        System.config({
+            packages: {        
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
+</body>
+</html>
